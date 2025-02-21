@@ -96,3 +96,27 @@ class LogoutView(APIView):
 class GroupView(viewsets.ModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupsSerializer
+    
+class UserView(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    
+class ThemeViewSet(viewsets.ModelViewSet):
+    queryset = Theme.objects.all()
+    serializer_class = ThemeSerializer
+    
+class PackageViewSet(viewsets.ModelViewSet):
+    queryset = Package.objects.all()
+    serializer_class = PackageSerializer
+    
+class StoreCategoryViewSet(viewsets.ModelViewSet):
+    queryset = StoreCategory.objects.all()
+    serializer_class = StoreCategorySerializer
+    
+class StoreViewSet(viewsets.ModelViewSet):
+    queryset = Store.objects.all()
+    serializer_class = StoreSerializer
+    
+class PaymentViewSet(viewsets.ModelViewSet):
+    queryset = Payment.objects.all()
+    serializer_class = PaymentSerializer
